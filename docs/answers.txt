@@ -1,0 +1,82 @@
+GitLab tutorials complete Oct 8, 2020
+Original account https://github.com/corycarte started May 2014. Went fairly unused until 2019
+
+
+Question 1 
+
+coryc@NZXT MINGW64 ~/projects/school/assignment2 (master)
+$ git status > docs/status.txt
+
+coryc@NZXT MINGW64 ~/projects/school/assignment2 (master)
+$ git add .; git commit -m "status.txt document added for step 3 of assign# 3"
+warning: LF will be replaced by CRLF in docs/status.txt.
+The file will have its original line endings in your working directory
+[master 2ef9c0e] status.txt document added for step 3 of assign# 3
+ 1 file changed, 9 insertions(+)
+ create mode 100644 docs/status.txt
+
+ Question 2
+
+8 commits (including the two I have completed) have been done to the repo
+
+Question 3
+
+Empty README.md was created Sep 25, 2019
+command used: git log
+
+Question 4
+
+1.  Branches are used in git repos when working in a team setting. An engineer 
+    can make required changes to the code, merge their changes locally onto all 
+    the work completed concurrently with theirs and push back to origin
+2.  Branches would be necessary in a Dictator/Lieutenants workflow. Each developer 
+    would make a indidividual branch to merge to the main lieutenant branch, and 
+    each lieutenant would need a branch to merge into the dictator main branch, 
+    which could then be pushed into the primary (blessed) repo.
+
+Question 5
+
+git log:    Used to retrieve all previous commit messages. The log contains information 
+            on the user that made the commit (name and email address), the date of the commit, 
+            and the hash of the commit
+
+git status: Returns the current status of local repo. including any untracked or changed files 
+            that are not explicitly left out of the repo with .gitignore
+
+Question 6
+
+git log --follow Vehicle.h
+
+Question 7
+
+git log --all --grep='file'
+
+Question 8
+
+Inheritence:   Inheritence is the ability to base objects off of other objects 
+               allowing the use of parent class attributes and methods.
+
+Polymorphism:  The concept that multiple classes can use the same interfaces 
+               and the class must provide implementations of the interface 
+               (e.g. printing to std::out in cpp).
+
+Encapsulation: The concept of bundling all methods and attributes to work within 
+               a single object together. When attempting to interact with the Car 
+               class, the Car class already includes the methods required to 
+               interact with the car's engine, wheels, etc.
+
+Question 9
+
+The main difference between the Integration Manager workflow and Dictator/Lieutenant 
+workflow is that in the Integraton Manager workflow, there is only one stage of conflict 
+resolution performed before the push to the "blessed" repository. The Dictator/Lieutenant 
+workflow has two stages of conflict resolution before any code is pushed to the "blessed" 
+repository.
+
+Question 10
+
+100 deveopers trying to work in a centralized workflow would most likely cause endless 
+merging and file conflicts. The benefit of working within a Dictator/Lieutenant workflow 
+could mitigate this by centralizing merges to select developers. The dictator will only 
+have to handle conflicts from the lieutenants and the lieutenants will only have to handle 
+merge conflicts within the assigned subset of developers
